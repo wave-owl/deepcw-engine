@@ -51,7 +51,7 @@ None.
 | semver | 7.8.4 | Syft source/package discovery | [{"license": {"id": "ISC"}}] |
 | serialize-error | 8.1.0 | Syft source/package discovery | [{"license": {"id": "MIT"}}] |
 | type-fest | 0.20.2 | Syft source/package discovery | [{"expression": "MIT OR CC0-1.0"}] |
-| /Users/gerolfziegenhain/src/wave-owl/local/sbom-upstream-results/deepcw-engine/.source-input/examples/nodejs/package-lock.json | unresolved | Syft source/package discovery | unresolved |
+| examples/nodejs/package-lock.json | unresolved | Syft source/package discovery | unresolved |
 
 License evidence paths/hashes, source manifests, model hashes and conditional
 CMake declarations are recorded in SBOM.cdx.json. Declared upstream pins do not

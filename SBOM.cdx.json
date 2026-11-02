@@ -13,7 +13,7 @@
           "content": "b12b1c362f969c3a49d9d96d1745a2ff0e017571c9d8fb2fb3fb20a436fbb58a"
         }
       ],
-      "name": "/Users/gerolfziegenhain/src/wave-owl/local/sbom-upstream-results/deepcw-engine/.source-input/examples/nodejs/package-lock.json",
+      "name": "examples/nodejs/package-lock.json",
       "type": "file"
     },
     {
