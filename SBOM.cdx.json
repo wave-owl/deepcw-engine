@@ -1,0 +1,1405 @@
+{
+  "bomFormat": "CycloneDX",
+  "components": [
+    {
+      "bom-ref": "b47a252d69ad6010",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "6e0b13a0f5a3931be922bbe72c58d2bff0e779db"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "b12b1c362f969c3a49d9d96d1745a2ff0e017571c9d8fb2fb3fb20a436fbb58a"
+        }
+      ],
+      "name": "/Users/gerolfziegenhain/src/wave-owl/local/sbom-upstream-results/deepcw-engine/.source-input/examples/nodejs/package-lock.json",
+      "type": "file"
+    },
+    {
+      "bom-ref": "external-library:0",
+      "name": "Conditional source requirements declared by examples/nodejs/package.json",
+      "properties": [
+        {
+          "name": "sbom:role",
+          "value": "conditional-build-runtime-requirement"
+        },
+        {
+          "name": "sbom:resolution",
+          "value": "conditional; unresolved version"
+        },
+        {
+          "name": "sbom:declared-version",
+          "value": "unresolved; see immutable declaration evidence"
+        },
+        {
+          "name": "sbom:evidence",
+          "value": "[{\"path\": \"examples/nodejs/package.json\", \"sha256\": \"d30b8f7ca8455a6a7ce04ae9cc172e0dbfe293ae1e95cf465693db4865c495cc\"}]"
+        }
+      ],
+      "type": "library"
+    },
+    {
+      "bom-ref": "external-library:1",
+      "name": "Conditional source requirements declared by examples/python/requirements.txt",
+      "properties": [
+        {
+          "name": "sbom:role",
+          "value": "conditional-build-runtime-requirement"
+        },
+        {
+          "name": "sbom:resolution",
+          "value": "conditional; unresolved version"
+        },
+        {
+          "name": "sbom:declared-version",
+          "value": "unresolved; see immutable declaration evidence"
+        },
+        {
+          "name": "sbom:evidence",
+          "value": "[{\"path\": \"examples/python/requirements.txt\", \"sha256\": \"2ec7b315d4ba304cd1f2e0ec9aa26da24b6b36759ed0d5ff7957f152ea031530\"}]"
+        }
+      ],
+      "type": "library"
+    },
+    {
+      "bom-ref": "external-library:2",
+      "name": "examples/python/requirements.txt: numpy>=1.24, onnxruntime>=1.17",
+      "properties": [
+        {
+          "name": "sbom:role",
+          "value": "conditional-build-runtime-requirement"
+        },
+        {
+          "name": "sbom:resolution",
+          "value": "conditional; unresolved version"
+        },
+        {
+          "name": "sbom:declared-version",
+          "value": "unresolved; conditional source declaration"
+        },
+        {
+          "name": "sbom:evidence",
+          "value": "[{\"path\": \"examples/nodejs/package.json\", \"sha256\": \"d30b8f7ca8455a6a7ce04ae9cc172e0dbfe293ae1e95cf465693db4865c495cc\"}]"
+        }
+      ],
+      "type": "library"
+    },
+    {
+      "bom-ref": "external-library:3",
+      "name": "examples/nodejs/package.json: onnxruntime-node ^1.18.0; no package-lock.json found",
+      "properties": [
+        {
+          "name": "sbom:role",
+          "value": "conditional-build-runtime-requirement"
+        },
+        {
+          "name": "sbom:resolution",
+          "value": "conditional; unresolved version"
+        },
+        {
+          "name": "sbom:declared-version",
+          "value": "unresolved; conditional source declaration"
+        },
+        {
+          "name": "sbom:evidence",
+          "value": "[{\"path\": \"examples/nodejs/package.json\", \"sha256\": \"d30b8f7ca8455a6a7ce04ae9cc172e0dbfe293ae1e95cf465693db4865c495cc\"}]"
+        }
+      ],
+      "type": "library"
+    },
+    {
+      "bom-ref": "model:model.onnx",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "ef120799457bca042d4690944f0faf93268eb4654e7f50f28784ad63bdc1fe02"
+        }
+      ],
+      "name": "model.onnx",
+      "properties": [
+        {
+          "name": "sbom:role",
+          "value": "model-file"
+        }
+      ],
+      "type": "file"
+    },
+    {
+      "bom-ref": "model:model.onnx.json",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "b4342157b90229ee7380e165f3d8036179b80d1e6ae02f2557388b7fcd558c01"
+        }
+      ],
+      "name": "model.onnx.json",
+      "properties": [
+        {
+          "name": "sbom:role",
+          "value": "model-file"
+        }
+      ],
+      "type": "file"
+    },
+    {
+      "bom-ref": "pkg:npm/adm-zip@0.5.17?package-id=f81a2aeba33749c1",
+      "cpe": "cpe:2.3:a:adm-zip_project:adm-zip:0.5.17:*:*:*:*:node.js:*:*",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "name": "adm-zip",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "javascript-lock-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "javascript"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "npm"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "javascript-npm-package-lock-entry"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/examples/nodejs/package-lock.json"
+        }
+      ],
+      "purl": "pkg:npm/adm-zip@0.5.17",
+      "type": "library",
+      "version": "0.5.17"
+    },
+    {
+      "bom-ref": "pkg:npm/deepcw-onnx-nodejs-example@1.0.0?package-id=b964399f08aab765",
+      "cpe": "cpe:2.3:a:deepcw-onnx-nodejs-example:deepcw-onnx-nodejs-example:1.0.0:*:*:*:*:*:*:*",
+      "licenses": [
+        {
+          "license": {
+            "id": "AGPL-3.0-only"
+          }
+        }
+      ],
+      "name": "deepcw-onnx-nodejs-example",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "javascript-lock-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "javascript"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "npm"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "javascript-npm-package-lock-entry"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:deepcw-onnx-nodejs-example:deepcw_onnx_nodejs_example:1.0.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:deepcw_onnx_nodejs_example:deepcw-onnx-nodejs-example:1.0.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:deepcw_onnx_nodejs_example:deepcw_onnx_nodejs_example:1.0.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:deepcw-onnx-nodejs:deepcw-onnx-nodejs-example:1.0.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:deepcw-onnx-nodejs:deepcw_onnx_nodejs_example:1.0.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:deepcw_onnx_nodejs:deepcw-onnx-nodejs-example:1.0.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:deepcw_onnx_nodejs:deepcw_onnx_nodejs_example:1.0.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:deepcw-onnx:deepcw-onnx-nodejs-example:1.0.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:deepcw-onnx:deepcw_onnx_nodejs_example:1.0.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:deepcw_onnx:deepcw-onnx-nodejs-example:1.0.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:deepcw_onnx:deepcw_onnx_nodejs_example:1.0.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:deepcw:deepcw-onnx-nodejs-example:1.0.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:deepcw:deepcw_onnx_nodejs_example:1.0.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/examples/nodejs/package-lock.json"
+        }
+      ],
+      "purl": "pkg:npm/deepcw-onnx-nodejs-example@1.0.0",
+      "type": "library",
+      "version": "1.0.0"
+    },
+    {
+      "bom-ref": "pkg:npm/define-data-property@1.1.4?package-id=4dcebf4912829266",
+      "cpe": "cpe:2.3:a:define-data-property:define-data-property:1.1.4:*:*:*:*:*:*:*",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "name": "define-data-property",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "javascript-lock-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "javascript"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "npm"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "javascript-npm-package-lock-entry"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:define-data-property:define_data_property:1.1.4:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:define_data_property:define-data-property:1.1.4:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:define_data_property:define_data_property:1.1.4:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:define-data:define-data-property:1.1.4:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:define-data:define_data_property:1.1.4:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:define_data:define-data-property:1.1.4:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:define_data:define_data_property:1.1.4:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:define:define-data-property:1.1.4:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:define:define_data_property:1.1.4:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/examples/nodejs/package-lock.json"
+        }
+      ],
+      "purl": "pkg:npm/define-data-property@1.1.4",
+      "type": "library",
+      "version": "1.1.4"
+    },
+    {
+      "bom-ref": "pkg:npm/define-properties@1.2.1?package-id=68b92e0a1ad5bad2",
+      "cpe": "cpe:2.3:a:define-properties:define-properties:1.2.1:*:*:*:*:*:*:*",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "name": "define-properties",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "javascript-lock-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "javascript"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "npm"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "javascript-npm-package-lock-entry"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:define-properties:define_properties:1.2.1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:define_properties:define-properties:1.2.1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:define_properties:define_properties:1.2.1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:define:define-properties:1.2.1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:define:define_properties:1.2.1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/examples/nodejs/package-lock.json"
+        }
+      ],
+      "purl": "pkg:npm/define-properties@1.2.1",
+      "type": "library",
+      "version": "1.2.1"
+    },
+    {
+      "bom-ref": "pkg:npm/es-define-property@1.0.1?package-id=fd77946065aab05c",
+      "cpe": "cpe:2.3:a:es-define-property:es-define-property:1.0.1:*:*:*:*:*:*:*",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "name": "es-define-property",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "javascript-lock-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "javascript"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "npm"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "javascript-npm-package-lock-entry"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:es-define-property:es_define_property:1.0.1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:es_define_property:es-define-property:1.0.1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:es_define_property:es_define_property:1.0.1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:es-define:es-define-property:1.0.1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:es-define:es_define_property:1.0.1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:es_define:es-define-property:1.0.1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:es_define:es_define_property:1.0.1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:es:es-define-property:1.0.1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:es:es_define_property:1.0.1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/examples/nodejs/package-lock.json"
+        }
+      ],
+      "purl": "pkg:npm/es-define-property@1.0.1",
+      "type": "library",
+      "version": "1.0.1"
+    },
+    {
+      "bom-ref": "pkg:npm/es-errors@1.3.0?package-id=205330385b04aec8",
+      "cpe": "cpe:2.3:a:es-errors:es-errors:1.3.0:*:*:*:*:*:*:*",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "name": "es-errors",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "javascript-lock-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "javascript"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "npm"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "javascript-npm-package-lock-entry"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:es-errors:es_errors:1.3.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:es_errors:es-errors:1.3.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:es_errors:es_errors:1.3.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:es:es-errors:1.3.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:es:es_errors:1.3.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/examples/nodejs/package-lock.json"
+        }
+      ],
+      "purl": "pkg:npm/es-errors@1.3.0",
+      "type": "library",
+      "version": "1.3.0"
+    },
+    {
+      "bom-ref": "pkg:npm/escape-string-regexp@4.0.0?package-id=e43a87d1eae7a994",
+      "cpe": "cpe:2.3:a:escape-string-regexp:escape-string-regexp:4.0.0:*:*:*:*:*:*:*",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "name": "escape-string-regexp",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "javascript-lock-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "javascript"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "npm"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "javascript-npm-package-lock-entry"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:escape-string-regexp:escape_string_regexp:4.0.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:escape_string_regexp:escape-string-regexp:4.0.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:escape_string_regexp:escape_string_regexp:4.0.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:escape-string:escape-string-regexp:4.0.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:escape-string:escape_string_regexp:4.0.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:escape_string:escape-string-regexp:4.0.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:escape_string:escape_string_regexp:4.0.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:escape:escape-string-regexp:4.0.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:escape:escape_string_regexp:4.0.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/examples/nodejs/package-lock.json"
+        }
+      ],
+      "purl": "pkg:npm/escape-string-regexp@4.0.0",
+      "type": "library",
+      "version": "4.0.0"
+    },
+    {
+      "bom-ref": "pkg:npm/global-agent@4.1.3?package-id=6cce350cb99e87d0",
+      "cpe": "cpe:2.3:a:global-agent:global-agent:4.1.3:*:*:*:*:*:*:*",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "name": "global-agent",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "javascript-lock-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "javascript"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "npm"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "javascript-npm-package-lock-entry"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:global-agent:global_agent:4.1.3:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:global_agent:global-agent:4.1.3:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:global_agent:global_agent:4.1.3:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:global:global-agent:4.1.3:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:global:global_agent:4.1.3:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/examples/nodejs/package-lock.json"
+        }
+      ],
+      "purl": "pkg:npm/global-agent@4.1.3",
+      "type": "library",
+      "version": "4.1.3"
+    },
+    {
+      "bom-ref": "pkg:npm/globalthis@1.0.4?package-id=be9347baba6a8d8f",
+      "cpe": "cpe:2.3:a:globalthis:globalthis:1.0.4:*:*:*:*:*:*:*",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "name": "globalthis",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "javascript-lock-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "javascript"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "npm"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "javascript-npm-package-lock-entry"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/examples/nodejs/package-lock.json"
+        }
+      ],
+      "purl": "pkg:npm/globalthis@1.0.4",
+      "type": "library",
+      "version": "1.0.4"
+    },
+    {
+      "bom-ref": "pkg:npm/gopd@1.2.0?package-id=5ce6459a13a643b7",
+      "cpe": "cpe:2.3:a:gopd:gopd:1.2.0:*:*:*:*:*:*:*",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "name": "gopd",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "javascript-lock-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "javascript"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "npm"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "javascript-npm-package-lock-entry"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/examples/nodejs/package-lock.json"
+        }
+      ],
+      "purl": "pkg:npm/gopd@1.2.0",
+      "type": "library",
+      "version": "1.2.0"
+    },
+    {
+      "bom-ref": "pkg:npm/has-property-descriptors@1.0.2?package-id=8ef9a28c02246d42",
+      "cpe": "cpe:2.3:a:has-property-descriptors:has-property-descriptors:1.0.2:*:*:*:*:*:*:*",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "name": "has-property-descriptors",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "javascript-lock-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "javascript"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "npm"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "javascript-npm-package-lock-entry"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:has-property-descriptors:has_property_descriptors:1.0.2:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:has_property_descriptors:has-property-descriptors:1.0.2:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:has_property_descriptors:has_property_descriptors:1.0.2:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:has-property:has-property-descriptors:1.0.2:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:has-property:has_property_descriptors:1.0.2:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:has_property:has-property-descriptors:1.0.2:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:has_property:has_property_descriptors:1.0.2:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:has:has-property-descriptors:1.0.2:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:has:has_property_descriptors:1.0.2:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/examples/nodejs/package-lock.json"
+        }
+      ],
+      "purl": "pkg:npm/has-property-descriptors@1.0.2",
+      "type": "library",
+      "version": "1.0.2"
+    },
+    {
+      "bom-ref": "pkg:npm/matcher@4.0.0?package-id=ed7d8a5c6d9a435b",
+      "cpe": "cpe:2.3:a:matcher:matcher:4.0.0:*:*:*:*:*:*:*",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "name": "matcher",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "javascript-lock-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "javascript"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "npm"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "javascript-npm-package-lock-entry"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/examples/nodejs/package-lock.json"
+        }
+      ],
+      "purl": "pkg:npm/matcher@4.0.0",
+      "type": "library",
+      "version": "4.0.0"
+    },
+    {
+      "bom-ref": "pkg:npm/object-keys@1.1.1?package-id=7b85d5a9cc0aa12e",
+      "cpe": "cpe:2.3:a:object-keys:object-keys:1.1.1:*:*:*:*:*:*:*",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "name": "object-keys",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "javascript-lock-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "javascript"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "npm"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "javascript-npm-package-lock-entry"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:object-keys:object_keys:1.1.1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:object_keys:object-keys:1.1.1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:object_keys:object_keys:1.1.1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:object:object-keys:1.1.1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:object:object_keys:1.1.1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/examples/nodejs/package-lock.json"
+        }
+      ],
+      "purl": "pkg:npm/object-keys@1.1.1",
+      "type": "library",
+      "version": "1.1.1"
+    },
+    {
+      "bom-ref": "pkg:npm/onnxruntime-common@1.26.0?package-id=e13be072de2954fb",
+      "cpe": "cpe:2.3:a:onnxruntime-common:onnxruntime-common:1.26.0:*:*:*:*:*:*:*",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "name": "onnxruntime-common",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "javascript-lock-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "javascript"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "npm"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "javascript-npm-package-lock-entry"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:onnxruntime-common:onnxruntime_common:1.26.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:onnxruntime_common:onnxruntime-common:1.26.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:onnxruntime_common:onnxruntime_common:1.26.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:onnxruntime:onnxruntime-common:1.26.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:onnxruntime:onnxruntime_common:1.26.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/examples/nodejs/package-lock.json"
+        }
+      ],
+      "purl": "pkg:npm/onnxruntime-common@1.26.0",
+      "type": "library",
+      "version": "1.26.0"
+    },
+    {
+      "bom-ref": "pkg:npm/onnxruntime-node@1.26.0?package-id=70936e7648752326",
+      "cpe": "cpe:2.3:a:onnxruntime-node:onnxruntime-node:1.26.0:*:*:*:*:*:*:*",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "name": "onnxruntime-node",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "javascript-lock-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "javascript"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "npm"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "javascript-npm-package-lock-entry"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:onnxruntime-node:onnxruntime_node:1.26.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:onnxruntime_node:onnxruntime-node:1.26.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:onnxruntime_node:onnxruntime_node:1.26.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:onnxruntime:onnxruntime-node:1.26.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:onnxruntime:onnxruntime_node:1.26.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/examples/nodejs/package-lock.json"
+        }
+      ],
+      "purl": "pkg:npm/onnxruntime-node@1.26.0",
+      "type": "library",
+      "version": "1.26.0"
+    },
+    {
+      "bom-ref": "pkg:npm/semver@7.8.4?package-id=f494e3db5440ad95",
+      "cpe": "cpe:2.3:a:npmjs:semver:7.8.4:*:*:*:*:node.js:*:*",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "name": "semver",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "javascript-lock-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "javascript"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "npm"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "javascript-npm-package-lock-entry"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/examples/nodejs/package-lock.json"
+        }
+      ],
+      "purl": "pkg:npm/semver@7.8.4",
+      "type": "library",
+      "version": "7.8.4"
+    },
+    {
+      "bom-ref": "pkg:npm/serialize-error@8.1.0?package-id=0e081e82c48189a1",
+      "cpe": "cpe:2.3:a:serialize-error:serialize-error:8.1.0:*:*:*:*:*:*:*",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "name": "serialize-error",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "javascript-lock-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "javascript"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "npm"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "javascript-npm-package-lock-entry"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:serialize-error:serialize_error:8.1.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:serialize_error:serialize-error:8.1.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:serialize_error:serialize_error:8.1.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:serialize:serialize-error:8.1.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:serialize:serialize_error:8.1.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/examples/nodejs/package-lock.json"
+        }
+      ],
+      "purl": "pkg:npm/serialize-error@8.1.0",
+      "type": "library",
+      "version": "8.1.0"
+    },
+    {
+      "bom-ref": "pkg:npm/type-fest@0.20.2?package-id=5615caa4c0a9c014",
+      "cpe": "cpe:2.3:a:sindresorhus:type-fest:0.20.2:*:*:*:*:node.js:*:*",
+      "licenses": [
+        {
+          "expression": "MIT OR CC0-1.0"
+        }
+      ],
+      "name": "type-fest",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "javascript-lock-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "javascript"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "npm"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "javascript-npm-package-lock-entry"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/examples/nodejs/package-lock.json"
+        }
+      ],
+      "purl": "pkg:npm/type-fest@0.20.2",
+      "type": "library",
+      "version": "0.20.2"
+    }
+  ],
+  "compositions": [
+    {
+      "aggregate": "unknown",
+      "assemblies": [
+        "git:https://github.com/wave-owl/deepcw-engine@8e264d243bbd4467bd19f3f28292219405b47e0e"
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "dependsOn": [],
+      "ref": "b47a252d69ad6010"
+    },
+    {
+      "dependsOn": [],
+      "ref": "external-library:0"
+    },
+    {
+      "dependsOn": [],
+      "ref": "external-library:1"
+    },
+    {
+      "dependsOn": [],
+      "ref": "external-library:2"
+    },
+    {
+      "dependsOn": [],
+      "ref": "external-library:3"
+    },
+    {
+      "dependsOn": [
+        "b47a252d69ad6010",
+        "external-library:0",
+        "external-library:1",
+        "external-library:2",
+        "external-library:3",
+        "model:model.onnx",
+        "model:model.onnx.json",
+        "pkg:npm/adm-zip@0.5.17?package-id=f81a2aeba33749c1",
+        "pkg:npm/deepcw-onnx-nodejs-example@1.0.0?package-id=b964399f08aab765",
+        "pkg:npm/define-data-property@1.1.4?package-id=4dcebf4912829266",
+        "pkg:npm/define-properties@1.2.1?package-id=68b92e0a1ad5bad2",
+        "pkg:npm/es-define-property@1.0.1?package-id=fd77946065aab05c",
+        "pkg:npm/es-errors@1.3.0?package-id=205330385b04aec8",
+        "pkg:npm/escape-string-regexp@4.0.0?package-id=e43a87d1eae7a994",
+        "pkg:npm/global-agent@4.1.3?package-id=6cce350cb99e87d0",
+        "pkg:npm/globalthis@1.0.4?package-id=be9347baba6a8d8f",
+        "pkg:npm/gopd@1.2.0?package-id=5ce6459a13a643b7",
+        "pkg:npm/has-property-descriptors@1.0.2?package-id=8ef9a28c02246d42",
+        "pkg:npm/matcher@4.0.0?package-id=ed7d8a5c6d9a435b",
+        "pkg:npm/object-keys@1.1.1?package-id=7b85d5a9cc0aa12e",
+        "pkg:npm/onnxruntime-common@1.26.0?package-id=e13be072de2954fb",
+        "pkg:npm/onnxruntime-node@1.26.0?package-id=70936e7648752326",
+        "pkg:npm/semver@7.8.4?package-id=f494e3db5440ad95",
+        "pkg:npm/serialize-error@8.1.0?package-id=0e081e82c48189a1",
+        "pkg:npm/type-fest@0.20.2?package-id=5615caa4c0a9c014"
+      ],
+      "ref": "git:https://github.com/wave-owl/deepcw-engine@8e264d243bbd4467bd19f3f28292219405b47e0e"
+    },
+    {
+      "dependsOn": [],
+      "ref": "model:model.onnx"
+    },
+    {
+      "dependsOn": [],
+      "ref": "model:model.onnx.json"
+    },
+    {
+      "dependsOn": [],
+      "ref": "pkg:npm/adm-zip@0.5.17?package-id=f81a2aeba33749c1"
+    },
+    {
+      "dependsOn": [
+        "pkg:npm/onnxruntime-node@1.26.0?package-id=70936e7648752326"
+      ],
+      "ref": "pkg:npm/deepcw-onnx-nodejs-example@1.0.0?package-id=b964399f08aab765"
+    },
+    {
+      "dependsOn": [
+        "pkg:npm/es-define-property@1.0.1?package-id=fd77946065aab05c",
+        "pkg:npm/es-errors@1.3.0?package-id=205330385b04aec8",
+        "pkg:npm/gopd@1.2.0?package-id=5ce6459a13a643b7"
+      ],
+      "ref": "pkg:npm/define-data-property@1.1.4?package-id=4dcebf4912829266"
+    },
+    {
+      "dependsOn": [
+        "pkg:npm/define-data-property@1.1.4?package-id=4dcebf4912829266",
+        "pkg:npm/has-property-descriptors@1.0.2?package-id=8ef9a28c02246d42",
+        "pkg:npm/object-keys@1.1.1?package-id=7b85d5a9cc0aa12e"
+      ],
+      "ref": "pkg:npm/define-properties@1.2.1?package-id=68b92e0a1ad5bad2"
+    },
+    {
+      "dependsOn": [],
+      "ref": "pkg:npm/es-define-property@1.0.1?package-id=fd77946065aab05c"
+    },
+    {
+      "dependsOn": [],
+      "ref": "pkg:npm/es-errors@1.3.0?package-id=205330385b04aec8"
+    },
+    {
+      "dependsOn": [],
+      "ref": "pkg:npm/escape-string-regexp@4.0.0?package-id=e43a87d1eae7a994"
+    },
+    {
+      "dependsOn": [
+        "pkg:npm/globalthis@1.0.4?package-id=be9347baba6a8d8f",
+        "pkg:npm/matcher@4.0.0?package-id=ed7d8a5c6d9a435b",
+        "pkg:npm/semver@7.8.4?package-id=f494e3db5440ad95",
+        "pkg:npm/serialize-error@8.1.0?package-id=0e081e82c48189a1"
+      ],
+      "ref": "pkg:npm/global-agent@4.1.3?package-id=6cce350cb99e87d0"
+    },
+    {
+      "dependsOn": [
+        "pkg:npm/define-properties@1.2.1?package-id=68b92e0a1ad5bad2",
+        "pkg:npm/gopd@1.2.0?package-id=5ce6459a13a643b7"
+      ],
+      "ref": "pkg:npm/globalthis@1.0.4?package-id=be9347baba6a8d8f"
+    },
+    {
+      "dependsOn": [],
+      "ref": "pkg:npm/gopd@1.2.0?package-id=5ce6459a13a643b7"
+    },
+    {
+      "dependsOn": [
+        "pkg:npm/es-define-property@1.0.1?package-id=fd77946065aab05c"
+      ],
+      "ref": "pkg:npm/has-property-descriptors@1.0.2?package-id=8ef9a28c02246d42"
+    },
+    {
+      "dependsOn": [
+        "pkg:npm/escape-string-regexp@4.0.0?package-id=e43a87d1eae7a994"
+      ],
+      "ref": "pkg:npm/matcher@4.0.0?package-id=ed7d8a5c6d9a435b"
+    },
+    {
+      "dependsOn": [],
+      "ref": "pkg:npm/object-keys@1.1.1?package-id=7b85d5a9cc0aa12e"
+    },
+    {
+      "dependsOn": [],
+      "ref": "pkg:npm/onnxruntime-common@1.26.0?package-id=e13be072de2954fb"
+    },
+    {
+      "dependsOn": [
+        "pkg:npm/adm-zip@0.5.17?package-id=f81a2aeba33749c1",
+        "pkg:npm/global-agent@4.1.3?package-id=6cce350cb99e87d0",
+        "pkg:npm/onnxruntime-common@1.26.0?package-id=e13be072de2954fb"
+      ],
+      "ref": "pkg:npm/onnxruntime-node@1.26.0?package-id=70936e7648752326"
+    },
+    {
+      "dependsOn": [],
+      "ref": "pkg:npm/semver@7.8.4?package-id=f494e3db5440ad95"
+    },
+    {
+      "dependsOn": [
+        "pkg:npm/type-fest@0.20.2?package-id=5615caa4c0a9c014"
+      ],
+      "ref": "pkg:npm/serialize-error@8.1.0?package-id=0e081e82c48189a1"
+    },
+    {
+      "dependsOn": [],
+      "ref": "pkg:npm/type-fest@0.20.2?package-id=5615caa4c0a9c014"
+    }
+  ],
+  "metadata": {
+    "component": {
+      "bom-ref": "git:https://github.com/wave-owl/deepcw-engine@8e264d243bbd4467bd19f3f28292219405b47e0e",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/wave-owl/deepcw-engine/tree/8e264d243bbd4467bd19f3f28292219405b47e0e"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "License evidence; see declared files"
+          }
+        }
+      ],
+      "name": "wave-owl/deepcw-engine",
+      "properties": [
+        {
+          "name": "sbom:role",
+          "value": "source-root"
+        },
+        {
+          "name": "sbom:git-commit",
+          "value": "8e264d243bbd4467bd19f3f28292219405b47e0e"
+        },
+        {
+          "name": "sbom:git-tree",
+          "value": "932ebccd6650eaea37a964380755ae4420244725"
+        },
+        {
+          "name": "sbom:source-repository",
+          "value": "https://github.com/wave-owl/deepcw-engine"
+        },
+        {
+          "name": "sbom:release-tags",
+          "value": "[]"
+        },
+        {
+          "name": "sbom:license-evidence",
+          "value": "[{\"path\": \"LICENSE\", \"sha256\": \"0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0\"}]"
+        },
+        {
+          "name": "sbom:license-resolution",
+          "value": "unresolved; manual review required"
+        },
+        {
+          "name": "sbom:snapshot",
+          "value": "true"
+        },
+        {
+          "name": "sbom:snapshot-source-commit",
+          "value": "8e264d243bbd4467bd19f3f28292219405b47e0e"
+        },
+        {
+          "name": "sbom:snapshot-scope",
+          "value": "Initial immutable source snapshot, before the tooling commit; not a release report."
+        }
+      ],
+      "type": "application",
+      "version": "8e264d243bbd4467bd19f3f28292219405b47e0e"
+    },
+    "properties": [
+      {
+        "name": "sbom:scope",
+        "value": "Source repository inventory only; completeness is UNKNOWN. Syft inventories tracked source/package manifests. Gitlinks and declared vendored/model evidence are inspected at immutable pins. CMake declarations are conditional requirements, not resolved installations. This is NOT proof of operating-system packages, static-link closure, build-time resolution, or the contents of release binaries."
+      },
+      {
+        "name": "sbom:generation-status",
+        "value": "success"
+      },
+      {
+        "name": "sbom:generation-errors",
+        "value": "[]"
+      }
+    ],
+    "timestamp": "2026-11-02T16:49:41.848793+00:00",
+    "tools": {
+      "components": [
+        {
+          "author": "anchore",
+          "name": "syft",
+          "type": "application",
+          "version": "1.55.0"
+        }
+      ]
+    }
+  },
+  "serialNumber": "urn:uuid:615b214c-7966-409f-a934-e866f7cbe20f",
+  "specVersion": "1.6",
+  "version": 1
+}

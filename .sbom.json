@@ -1,0 +1,38 @@
+{
+  "gitlinks": {},
+  "vendored": [],
+  "models": [
+    "model.onnx",
+    "model.onnx.json"
+  ],
+  "external_libraries": [
+    {
+      "name": "Conditional source requirements declared by examples/nodejs/package.json",
+      "version": "unresolved; see immutable declaration evidence",
+      "evidence": [
+        "examples/nodejs/package.json"
+      ]
+    },
+    {
+      "name": "Conditional source requirements declared by examples/python/requirements.txt",
+      "version": "unresolved; see immutable declaration evidence",
+      "evidence": [
+        "examples/python/requirements.txt"
+      ]
+    },
+    {
+      "name": "examples/python/requirements.txt: numpy>=1.24, onnxruntime>=1.17",
+      "version": "unresolved; conditional source declaration",
+      "evidence": [
+        "examples/nodejs/package.json"
+      ]
+    },
+    {
+      "name": "examples/nodejs/package.json: onnxruntime-node ^1.18.0; no package-lock.json found",
+      "version": "unresolved; conditional source declaration",
+      "evidence": [
+        "examples/nodejs/package.json"
+      ]
+    }
+  ]
+}
